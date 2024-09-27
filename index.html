@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_blank">
+    <title>GitHub Page Embed</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Hide scrollbars */
+            position: relative;
+            font-family: Arial, sans-serif;
+        }
+        .more-games {
+            position: absolute;
+            top: 0; /* Touching the top of the screen */
+            right: 0; /* Touching the right side of the screen */
+            color: white;
+            background: blue; /* Solid blue background */
+            padding: 10px 30px; /* Increased padding for a longer button */
+            border-radius: 0 0 0 5px; /* Rounded bottom left corner */
+            cursor: pointer;
+            z-index: 10; /* Ensure it appears above other content */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove border */
+        }
+    </style>
+</head>
+<body>
+    <div class="more-games" onclick="window.open('https://sites.google.com/view/the-ham-edition/home', '_blank')">
+        More Games
+    </div>
+    <iframe src="https://il11liiillli11.github.io/rbcollegeworking/"></iframe>
+
+    <script>
+        // Fullscreen function
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+
+        // Call fullscreen on load
+        document.addEventListener('DOMContentLoaded', (event) => {
+            toggleFullScreen();
+        });
+    </script>
+</body>
+</html>
